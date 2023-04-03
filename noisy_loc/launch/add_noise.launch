@@ -1,0 +1,47 @@
+<launch>
+
+  
+  <node pkg="noisy_loc" name="noisy_loc_6" type="noisy_loc.py" output="screen">
+    <param name="~/noise_sigma_position" type="double" value="0.005"/>
+    <param name="~/noise_sigma_orientation" type="double" value="0.005"/>
+    <param name="~/robot_frame" type="string" value="base_link"/>
+    <param name="~/gt_frame" type="string" value="world"/>
+    <param name="~/output_frame" type="string" value="noisy_loc_6"/>
+  </node>
+  <node pkg="noisy_loc" name="noisy_loc_7" type="noisy_loc.py" output="screen">
+    <param name="~/noise_sigma_position" type="double" value="0.01"/>
+    <param name="~/noise_sigma_orientation" type="double" value="0.01"/>
+    <param name="~/robot_frame" type="string" value="base_link"/>
+    <param name="~/gt_frame" type="string" value="world"/>
+    <param name="~/output_frame" type="string" value="noisy_loc_7"/>
+  </node>
+  <node pkg="noisy_loc" name="noisy_loc_8" type="noisy_loc.py" output="screen">
+    <param name="~/noise_sigma_position" type="double" value="0.05"/>
+    <param name="~/noise_sigma_orientation" type="double" value="0.01"/>
+    <param name="~/robot_frame" type="string" value="base_link"/>
+    <param name="~/gt_frame" type="string" value="world"/>
+    <param name="~/output_frame" type="string" value="noisy_loc_8"/>
+  </node>
+  <node pkg="noisy_loc" name="noisy_loc_9" type="noisy_loc.py" output="screen">
+    <param name="~/noise_sigma_position" type="double" value="0.01"/>
+    <param name="~/noise_sigma_orientation" type="double" value="0.05"/>
+    <param name="~/robot_frame" type="string" value="base_link"/>
+    <param name="~/gt_frame" type="string" value="world"/>
+    <param name="~/output_frame" type="string" value="noisy_loc_9"/>
+  </node>
+  <node pkg="noisy_loc" name="noisy_loc_10" type="noisy_loc.py" output="screen">
+    <param name="~/noise_sigma_position" type="double" value="0.05"/>
+    <param name="~/noise_sigma_orientation" type="double" value="0.05"/>
+    <param name="~/robot_frame" type="string" value="base_link"/>
+    <param name="~/gt_frame" type="string" value="world"/>
+    <param name="~/output_frame" type="string" value="noisy_loc_10"/>
+  </node>
+  <node pkg="noisy_loc" name="noisy_loc_11" type="noisy_loc.py" output="screen">
+    <param name="~/noise_sigma_position" type="double" value="0.1"/>
+    <param name="~/noise_sigma_orientation" type="double" value="0.1"/>
+    <param name="~/robot_frame" type="string" value="base_link"/>
+    <param name="~/gt_frame" type="string" value="world"/>
+    <param name="~/output_frame" type="string" value="noisy_loc_11"/>
+  </node>
+
+</launch>

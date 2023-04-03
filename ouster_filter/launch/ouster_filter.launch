@@ -1,0 +1,11 @@
+<launch>
+
+
+  <node pkg="ouster_filter" name="ouster_filter" type="ouster_filter_node" output="screen">
+    <param name="~/base_frame" type="string" value="base_link"/>
+    <param name="~/robot_width" value="1.0"/>
+    <param name="~/x_offset" value="-.5"/>
+    <remap from="~/input_scan" to="/os_cloud_node/points"/>
+  </node>
+
+</launch>

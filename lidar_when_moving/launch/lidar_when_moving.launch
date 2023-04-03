@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="lidar_when_moving" name="lidar_when_moving" type="lidar_when_moving_node" output="screen">
+    <remap from="~/input_scan" to="/noisy_sensor/noisy_point_cloud"/>
+    <remap from="~/point_cloud" to="/lidar_when_moving/noisy_point_cloud"/>
+		<param name="odom_frame" value="world"/>
+
+  </node>
+
+</launch>

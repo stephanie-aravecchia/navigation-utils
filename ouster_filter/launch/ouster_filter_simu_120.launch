@@ -1,0 +1,13 @@
+<launch>
+
+
+  <node pkg="ouster_filter" name="ouster_filter" type="ouster_filter_node_120" output="screen">
+    <param name="base_frame" type="string" value="base_link"/>
+    <param name="robot_width" value="1.0"/>
+    <param name="x_offset" value="0.2"/>
+    <param name="range_min" value="0.2"/>
+    <param name="fov" value="120"/>
+    <remap from="~/input_scan" to="/os1_cloud_node/points"/>
+  </node>
+
+</launch>
